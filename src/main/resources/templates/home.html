@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>NASA News</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+<h1>🚀 NASA News</h1>
+
+<a href="/create" class="btn">+ Create News</a>
+
+<div class="container">
+    <div class="card" th:each="n : ${newsList}">
+        <h2 th:text="${n.title}"></h2>
+
+        <img th:if="${n.imagePath != null}" th:src="@{${n.imagePath}}" alt="image"/>
+
+        <p th:text="${n.content}"></p>
+    </div>
+</div>
+
+</body>
+</html>

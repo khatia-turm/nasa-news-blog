@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>News</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+<div class="card">
+    <h1 th:text="${news.title}"></h1>
+
+    <img th:if="${news.imagePath != null}" th:src="@{${news.imagePath}}"/>
+
+    <p th:text="${news.content}"></p>
+</div>
+
+<a href="/static">← Back</a>
+
+</body>
+</html>

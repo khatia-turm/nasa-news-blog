@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create News</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+<h1>Create NASA News</h1>
+
+<form th:action="@{/create}" method="post" enctype="multipart/form-data">
+
+    <label>Title:</label>
+    <input type="text" name="title"/>
+
+    <label>Content:</label>
+    <textarea name="content"></textarea>
+
+    <label>Image:</label>
+    <input type="file" name="file"/>
+
+    <button type="submit">Post</button>
+
+</form>
+
+<a href="/static">← Back</a>
+
+</body>
+</html>
