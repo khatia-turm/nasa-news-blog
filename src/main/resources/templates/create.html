@@ -8,22 +8,25 @@
 
 <h1>Create NASA News</h1>
 
-<form th:action="@{/create}" method="post" enctype="multipart/form-data">
+<form th:action="@{/create}" th:object="${newsForm}" method="post" enctype="multipart/form-data">
 
     <label>Title:</label>
-    <input type="text" name="title"/>
+    <input type="text" th:field="*{title}">
+    <p class="error" th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></p>
 
     <label>Content:</label>
-    <textarea name="content"></textarea>
+    <textarea th:field="*{content}"></textarea>
+    <p class="error" th:if="${#fields.hasErrors('content')}" th:errors="*{content}"></p>
 
     <label>Image:</label>
-    <input type="file" name="file"/>
+    <input type="file" th:field="*{file}" accept="image/*">
+    <p class="error" th:if="${#fields.hasErrors('file')}" th:errors="*{file}"></p>
 
     <button type="submit">Post</button>
 
 </form>
 
-<a href="/static">← Back</a>
+<a href="/">Back</a>
 
 </body>
 </html>

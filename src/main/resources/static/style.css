@@ -21,6 +21,11 @@ a {
     text-decoration: none;
 }
 
+form {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
 .btn {
     display: block;
     width: fit-content;
@@ -56,6 +61,11 @@ input, textarea {
     padding: 8px;
     border-radius: 5px;
     border: none;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 180px;
 }
 
 button {
@@ -64,4 +74,19 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.details-card {
+    margin: 20px auto;
+}
+
+.error {
+    color: #ff8a8a;
+    margin-top: -4px;
+    margin-bottom: 12px;
+}
+
+.success-message {
+    color: #a8ffbf;
+    text-align: center;
 }

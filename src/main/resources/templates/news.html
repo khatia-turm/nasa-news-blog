@@ -6,15 +6,14 @@
 </head>
 <body>
 
-<div class="card">
+<div class="card details-card">
+    <p class="success-message" th:if="${successMessage}" th:text="${successMessage}"></p>
     <h1 th:text="${news.title}"></h1>
-
-    <img th:if="${news.imagePath != null}" th:src="@{${news.imagePath}}"/>
-
+    <img th:if="${news.imagePath != null}" th:src="@{${news.imagePath}}" alt="news image">
     <p th:text="${news.content}"></p>
 </div>
 
-<a href="/static">← Back</a>
+<a href="/">Back</a>
 
 </body>
 </html>
