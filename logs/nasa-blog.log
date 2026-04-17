@@ -1,0 +1,16 @@
+2026-04-17 14:59:05 [INFO] [c.g.k.n.NasaBlogApplicationTests] - Starting NasaBlogApplicationTests using Java 26 with PID 1628 (started by User in C:\Users\User\Desktop\Spring Boot\nasa_blog)
+2026-04-17 14:59:05 [INFO] [c.g.k.n.NasaBlogApplicationTests] - No active profile set, falling back to 1 default profile: "default"
+2026-04-17 14:59:06 [INFO] [c.g.k.n.NasaBlogApplicationTests] - Started NasaBlogApplicationTests in 2.195 seconds (process running for 5.692)
+2026-04-17 15:14:35 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Starting NasaBlogApplication using Java 26 with PID 25504 (C:\Users\User\Desktop\Spring Boot\nasa_blog\target\classes started by User in C:\Users\User\Desktop\Spring Boot\nasa_blog)
+2026-04-17 15:14:35 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-04-17 15:14:36 [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2026-04-17 15:14:36 [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-17 15:14:36 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Started NasaBlogApplication in 1.631 seconds (process running for 2.378)
+2026-04-17 15:14:36 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - NASA Blog application started
+2026-04-17 15:17:05 [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-17 15:19:08 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Starting NasaBlogApplication using Java 26 with PID 18812 (C:\Users\User\Desktop\Spring Boot\nasa_blog\target\classes started by User in C:\Users\User\Desktop\Spring Boot\nasa_blog)
+2026-04-17 15:19:08 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-04-17 15:19:09 [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2026-04-17 15:19:09 [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-17 15:19:09 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Started NasaBlogApplication in 1.647 seconds (process running for 2.458)
+2026-04-17 15:19:09 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - NASA Blog application started
