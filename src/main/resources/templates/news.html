@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" th:lang="${#locale.language}">
 <head>
-    <title>News</title>
+    <title th:text="#{news.title}">News</title>
     <link rel="stylesheet" th:href="@{/style.css}">
 </head>
 <body>
 
+<nav>
+    <a th:href="@{/news/{id}(id=${news.id},lang='en')}" th:text="#{language.english}">English</a>
+    <a th:href="@{/news/{id}(id=${news.id},lang='ka')}" th:text="#{language.georgian}">Georgian</a>
+</nav>
+
 <div class="card details-card">
     <p class="success-message" th:if="${successMessage}" th:text="${successMessage}"></p>
     <h1 th:text="${news.title}"></h1>
-    <img th:if="${news.imagePath != null}" th:src="@{${news.imagePath}}" alt="news image">
+    <img th:if="${news.imagePath != null}" th:src="@{${news.imagePath}}" th:alt="#{news.image.alt}">
     <p th:text="${news.content}"></p>
 </div>
 
-<a href="/">Back</a>
+<a th:href="@{/}" th:text="#{navigation.back}">Back</a>
 
 </body>
 </html>

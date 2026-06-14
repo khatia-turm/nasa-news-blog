@@ -1,26 +1,31 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" th:lang="${#locale.language}">
 <head>
-    <title>NASA News</title>
+    <title th:text="#{home.title}">NASA News</title>
     <link rel="stylesheet" th:href="@{/style.css}">
 </head>
 <body>
 
-<h1>NASA News</h1>
+<nav>
+    <a th:href="@{/(lang='en')}" th:text="#{language.english}">English</a>
+    <a th:href="@{/(lang='ka')}" th:text="#{language.georgian}">Georgian</a>
+</nav>
 
-<img src="/nasa-badge.svg" alt="NASA blog banner" class="hero-image">
+<h1 th:text="#{home.heading}">NASA News</h1>
+
+<img th:src="@{/nasa-badge.svg}" th:alt="#{home.banner.alt}" class="hero-image">
 
 <p class="success-message" th:if="${successMessage}" th:text="${successMessage}"></p>
 <p class="error" th:if="${errorMessage}" th:text="${errorMessage}"></p>
 
-<a href="/create" class="btn">+ Create News</a>
+<a th:href="@{/create}" class="btn" th:text="#{home.create}">+ Create News</a>
 
 <div class="container">
     <div class="card" th:each="n : ${newsList}">
         <h2 th:text="${n.title}"></h2>
-        <img th:if="${n.imagePath != null}" th:src="@{${n.imagePath}}" alt="image">
+        <img th:if="${n.imagePath != null}" th:src="@{${n.imagePath}}" th:alt="#{news.image.alt}">
         <p th:text="${n.content}"></p>
-        <a th:href="@{/news/{id}(id=${n.id})}">Open post</a>
+        <a th:href="@{/news/{id}(id=${n.id})}" th:text="#{home.openPost}">Open post</a>
     </div>
 </div>
 

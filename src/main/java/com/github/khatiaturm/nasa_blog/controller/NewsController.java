@@ -1,11 +1,13 @@
 package com.github.khatiaturm.nasa_blog.controller;
 
 import java.io.IOException;
+import java.util.Locale;
 import java.util.NoSuchElementException;
 
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -25,9 +27,11 @@ public class NewsController {
     private static final Logger log = LoggerFactory.getLogger(NewsController.class);
 
     private final NewsService newsService;
+    private final MessageSource messageSource;
 
-    public NewsController(NewsService newsService) {
+    public NewsController(NewsService newsService, MessageSource messageSource) {
         this.newsService = newsService;
+        this.messageSource = messageSource;
     }
 
     @GetMapping("/")
@@ -47,7 +51,8 @@ public class NewsController {
     @PostMapping("/create")
     public String createNews(@Valid @ModelAttribute("newsForm") NewsForm newsForm,
                              BindingResult bindingResult,
-                             RedirectAttributes redirectAttributes) {
+                             RedirectAttributes redirectAttributes,
+                             Locale locale) {
         if (bindingResult.hasErrors()) {
             return "create";
         }
@@ -55,22 +60,32 @@ public class NewsController {
         try {
             NewsPost createdPost = newsService.create(newsForm);
             log.info("Created news post with id={}", createdPost.getId());
-            redirectAttributes.addFlashAttribute("successMessage", "News post created successfully.");
+            redirectAttributes.addFlashAttribute(
+                    "successMessage",
+                    messageSource.getMessage("message.news.created", null, locale));
             return "redirect:/news/" + createdPost.getId();
         } catch (IOException exception) {
             log.error("Failed to store uploaded file", exception);
-            bindingResult.rejectValue("file", "upload.failed", "Image upload failed. Please try again.");
+            bindingResult.rejectValue(
+                    "file",
+                    "upload.failed",
+                    messageSource.getMessage("validation.file.upload", null, locale));
             return "create";
         }
     }
 
     @GetMapping("/news/{id}")
-    public String showNews(@PathVariable long id, Model model, RedirectAttributes redirectAttributes) {
+    public String showNews(@PathVariable long id,
+                           Model model,
+                           RedirectAttributes redirectAttributes,
+                           Locale locale) {
         try {
             model.addAttribute("news", newsService.findById(id));
             return "news";
         } catch (NoSuchElementException exception) {
-            redirectAttributes.addFlashAttribute("errorMessage", "Requested news post was not found.");
+            redirectAttributes.addFlashAttribute(
+                    "errorMessage",
+                    messageSource.getMessage("message.news.notFound", null, locale));
             return "redirect:/";
         }
     }

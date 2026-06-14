@@ -206,3 +206,143 @@ Action:
 
 Identify and stop the process that's listening on port 18080 or configure this application to listen on another port.
 
+2026-06-14 15:17:44 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Starting NasaBlogApplication using Java 26 with PID 6784 (C:\Users\User\Desktop\Spring Boot\nasa_blog\target\classes started by User in C:\Users\User\Desktop\Spring Boot\nasa_blog)
+2026-06-14 15:17:44 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-06-14 15:17:46 [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2026-06-14 15:17:46 [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-06-14 15:17:47 [INFO] [org.hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-14 15:17:47 [INFO] [org.hibernate.orm.core] - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-06-14 15:17:48 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2026-06-14 15:17:49 [INFO] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/nasa-blog user=SA
+2026-06-14 15:17:49 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2026-06-14 15:17:49 [INFO] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/nasa-blog]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: NASA-BLOG/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-14 15:17:51 [INFO] [org.hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-14 15:17:52 [WARN] [o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-14 15:17:53 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Started NasaBlogApplication in 10.225 seconds (process running for 10.987)
+2026-06-14 15:17:53 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - NASA Blog application started
+2026-06-14 15:17:57 [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-14 15:18:30 [INFO] [c.g.k.n.controller.NewsController] - Created news post with id=3
+2026-06-14 15:19:42 [INFO] [c.g.k.n.controller.NewsController] - Created news post with id=4
+2026-06-14 15:28:59 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2026-06-14 15:28:59 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2026-06-14 15:28:59 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Starting NasaBlogApplication using Java 26 with PID 6784 (C:\Users\User\Desktop\Spring Boot\nasa_blog\target\classes started by User in C:\Users\User\Desktop\Spring Boot\nasa_blog)
+2026-06-14 15:28:59 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-06-14 15:29:00 [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2026-06-14 15:29:00 [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-06-14 15:29:00 [INFO] [org.hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-14 15:29:00 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Starting...
+2026-06-14 15:29:00 [INFO] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-2 - Added connection conn10: url=jdbc:h2:file:./data/nasa-blog user=SA
+2026-06-14 15:29:00 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Start completed.
+2026-06-14 15:29:00 [INFO] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/nasa-blog]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: NASA-BLOG/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-14 15:29:00 [INFO] [org.hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-14 15:29:00 [WARN] [o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-14 15:29:00 [WARN] [o.s.b.s.a.UserDetailsServiceAutoConfiguration] - 
+
+Using generated security password: d99f9cd8-8cb7-41c2-bac5-f12da0aab716
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-14 15:29:00 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Started NasaBlogApplication in 1.266 seconds (process running for 678.0)
+2026-06-14 15:29:00 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - NASA Blog application started
+2026-06-14 15:29:02 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown initiated...
+2026-06-14 15:29:02 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown completed.
+2026-06-14 15:29:02 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Starting NasaBlogApplication using Java 26 with PID 6784 (C:\Users\User\Desktop\Spring Boot\nasa_blog\target\classes started by User in C:\Users\User\Desktop\Spring Boot\nasa_blog)
+2026-06-14 15:29:02 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-06-14 15:29:02 [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2026-06-14 15:29:02 [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-06-14 15:29:03 [INFO] [org.hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-14 15:29:03 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Starting...
+2026-06-14 15:29:03 [INFO] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-3 - Added connection conn20: url=jdbc:h2:file:./data/nasa-blog user=SA
+2026-06-14 15:29:03 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Start completed.
+2026-06-14 15:29:03 [INFO] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/nasa-blog]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: NASA-BLOG/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-14 15:29:03 [INFO] [org.hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-14 15:29:03 [WARN] [o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-14 15:29:03 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Started NasaBlogApplication in 1.375 seconds (process running for 680.721)
+2026-06-14 15:29:03 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - NASA Blog application started
+2026-06-14 15:32:43 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Shutdown initiated...
+2026-06-14 15:32:43 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Shutdown completed.
+2026-06-14 15:32:45 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Starting NasaBlogApplication v0.0.1-SNAPSHOT using Java 26 with PID 27884 (C:\Users\User\Desktop\Spring Boot\nasa_blog\target\nasa_blog-0.0.1-SNAPSHOT.jar started by User in C:\Users\User\Desktop\Spring Boot\nasa_blog)
+2026-06-14 15:32:45 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-06-14 15:32:47 [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2026-06-14 15:32:47 [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-06-14 15:32:48 [INFO] [org.hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-14 15:32:48 [INFO] [org.hibernate.orm.core] - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-06-14 15:32:50 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2026-06-14 15:32:51 [INFO] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:locale-check user=SA
+2026-06-14 15:32:51 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2026-06-14 15:32:51 [INFO] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:locale-check]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: LOCALE-CHECK/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-14 15:32:55 [INFO] [org.hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-14 15:32:58 [WARN] [o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-14 15:33:04 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Started NasaBlogApplication in 20.211 seconds (process running for 21.143)
+2026-06-14 15:33:04 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - NASA Blog application started
+2026-06-14 15:33:04 [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-14 15:35:59 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Starting NasaBlogApplication using Java 26 with PID 8232 (C:\Users\User\Desktop\Spring Boot\nasa_blog\target\classes started by User in C:\Users\User\Desktop\Spring Boot\nasa_blog)
+2026-06-14 15:35:59 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-06-14 15:36:00 [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2026-06-14 15:36:00 [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-06-14 15:36:01 [INFO] [org.hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-14 15:36:01 [INFO] [org.hibernate.orm.core] - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-06-14 15:36:01 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2026-06-14 15:36:02 [INFO] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/nasa-blog user=SA
+2026-06-14 15:36:02 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2026-06-14 15:36:02 [INFO] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/nasa-blog]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: NASA-BLOG/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-14 15:36:03 [INFO] [org.hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-14 15:36:03 [WARN] [o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-14 15:36:04 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Started NasaBlogApplication in 6.098 seconds (process running for 6.804)
+2026-06-14 15:36:04 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - NASA Blog application started
+2026-06-14 15:41:32 [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'

@@ -1,32 +1,37 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" th:lang="${#locale.language}">
 <head>
-    <title>Create News</title>
+    <title th:text="#{create.title}">Create News</title>
     <link rel="stylesheet" th:href="@{/style.css}">
 </head>
 <body>
 
-<h1>Create NASA News</h1>
+<nav>
+    <a th:href="@{/create(lang='en')}" th:text="#{language.english}">English</a>
+    <a th:href="@{/create(lang='ka')}" th:text="#{language.georgian}">Georgian</a>
+</nav>
+
+<h1 th:text="#{create.heading}">Create NASA News</h1>
 
 <form th:action="@{/create}" th:object="${newsForm}" method="post" enctype="multipart/form-data">
 
-    <label>Title:</label>
+    <label th:text="#{create.label.title}">Title:</label>
     <input type="text" th:field="*{title}">
     <p class="error" th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></p>
 
-    <label>Content:</label>
+    <label th:text="#{create.label.content}">Content:</label>
     <textarea th:field="*{content}"></textarea>
     <p class="error" th:if="${#fields.hasErrors('content')}" th:errors="*{content}"></p>
 
-    <label>Image:</label>
+    <label th:text="#{create.label.image}">Image:</label>
     <input type="file" th:field="*{file}" accept="image/*">
     <p class="error" th:if="${#fields.hasErrors('file')}" th:errors="*{file}"></p>
 
-    <button type="submit">Post</button>
+    <button type="submit" th:text="#{create.submit}">Post</button>
 
 </form>
 
-<a href="/">Back</a>
+<a th:href="@{/}" th:text="#{navigation.back}">Back</a>
 
 </body>
 </html>

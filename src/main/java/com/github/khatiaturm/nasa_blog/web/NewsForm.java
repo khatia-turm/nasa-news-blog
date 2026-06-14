@@ -6,12 +6,12 @@ import org.springframework.web.multipart.MultipartFile;
 
 public class NewsForm {
 
-    @NotBlank(message = "Title is required.")
-    @Size(min = 3, max = 120, message = "Title must be between 3 and 120 characters.")
+    @NotBlank(message = "{validation.title.required}")
+    @Size(min = 3, max = 120, message = "{validation.title.size}")
     private String title;
 
-    @NotBlank(message = "Content is required.")
-    @Size(min = 10, max = 5000, message = "Content must be between 10 and 5000 characters.")
+    @NotBlank(message = "{validation.content.required}")
+    @Size(min = 10, max = 5000, message = "{validation.content.size}")
     private String content;
 
     private MultipartFile file;
