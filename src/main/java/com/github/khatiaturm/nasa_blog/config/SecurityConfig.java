@@ -21,7 +21,8 @@ public class SecurityConfig {
         http
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers("/create").hasRole("ADMIN")
-                        .requestMatchers("/", "/news/**", "/style.css", "/nasa-badge.svg", "/uploads/**")
+                        .requestMatchers("/info").hasRole("ADMIN")
+                        .requestMatchers("/", "/health", "/news/**", "/style.css", "/nasa-badge.svg", "/uploads/**")
                         .permitAll()
                         .anyRequest()
                         .authenticated())
