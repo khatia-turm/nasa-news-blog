@@ -1327,3 +1327,66 @@ This generated password is for development use only. Your security configuration
 2026-06-14 22:16:55 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 0 posts available
 2026-06-14 22:20:46 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
 2026-06-14 22:25:46 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 22:30:46 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 22:35:46 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 22:38:50 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Shutdown initiated...
+2026-06-14 22:38:50 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Shutdown completed.
+2026-06-14 22:38:51 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Starting NasaBlogApplication using Java 26 with PID 18048 (C:\Users\User\Desktop\Spring Boot\nasa_blog\target\classes started by User in C:\Users\User\Desktop\Spring Boot\nasa_blog)
+2026-06-14 22:38:51 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-06-14 22:38:51 [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2026-06-14 22:38:51 [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-06-14 22:38:51 [INFO] [org.hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-14 22:38:51 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-4 - Starting...
+2026-06-14 22:38:51 [INFO] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-4 - Added connection conn31: url=jdbc:h2:file:./data/nasa-blog user=SA
+2026-06-14 22:38:51 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-4 - Start completed.
+2026-06-14 22:38:51 [INFO] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/nasa-blog]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: NASA-BLOG/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-14 22:38:51 [INFO] [org.hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-14 22:38:51 [WARN] [o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-14 22:38:52 [WARN] [o.s.b.s.a.UserDetailsServiceAutoConfiguration] - 
+
+Using generated security password: 28f9d2b6-8a0e-476f-81ca-cc439d797999
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-14 22:38:52 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Started NasaBlogApplication in 1.247 seconds (process running for 1774.811)
+2026-06-14 22:38:52 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - NASA Blog application started
+2026-06-14 22:38:53 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-4 - Shutdown initiated...
+2026-06-14 22:38:53 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-4 - Shutdown completed.
+2026-06-14 22:38:53 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Starting NasaBlogApplication using Java 26 with PID 18048 (C:\Users\User\Desktop\Spring Boot\nasa_blog\target\classes started by User in C:\Users\User\Desktop\Spring Boot\nasa_blog)
+2026-06-14 22:38:53 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-06-14 22:38:54 [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2026-06-14 22:38:54 [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-06-14 22:38:54 [INFO] [org.hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-14 22:38:54 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-5 - Starting...
+2026-06-14 22:38:54 [INFO] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-5 - Added connection conn41: url=jdbc:h2:file:./data/nasa-blog user=SA
+2026-06-14 22:38:54 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-5 - Start completed.
+2026-06-14 22:38:54 [INFO] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/nasa-blog]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: NASA-BLOG/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-14 22:38:54 [INFO] [org.hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-14 22:38:54 [WARN] [o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-14 22:38:55 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Started NasaBlogApplication in 2.018 seconds (process running for 1778.138)
+2026-06-14 22:38:55 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - NASA Blog application started
+2026-06-14 22:39:05 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 22:40:41 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-5 - Shutdown initiated...
+2026-06-14 22:40:41 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-5 - Shutdown completed.
