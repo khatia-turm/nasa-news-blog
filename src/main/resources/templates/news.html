@@ -2,23 +2,44 @@
 <html xmlns:th="http://www.thymeleaf.org" th:lang="${#locale.language}">
 <head>
     <title th:text="#{news.title}">News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" th:href="@{/style.css}">
 </head>
 <body>
 
-<nav>
-    <a th:href="@{/news/{id}(id=${news.id},lang='en')}" th:text="#{language.english}">English</a>
-    <a th:href="@{/news/{id}(id=${news.id},lang='ka')}" th:text="#{language.georgian}">Georgian</a>
-</nav>
+<div class="page-shell">
+    <header class="site-header">
+        <a class="brand" th:href="@{/}">
+            <img th:src="@{/nasa-badge.svg}" th:alt="#{home.banner.alt}">
+            <span th:text="#{home.heading}">NASA News</span>
+        </a>
 
-<div class="card details-card">
-    <p class="success-message" th:if="${successMessage}" th:text="${successMessage}"></p>
-    <h1 th:text="${news.title}"></h1>
-    <img th:if="${news.imagePath != null}" th:src="@{${news.imagePath}}" th:alt="#{news.image.alt}">
-    <p th:text="${news.content}"></p>
+        <nav class="language-switcher" aria-label="Language">
+            <a th:href="@{/news/{id}(id=${news.id},lang='en')}"
+               th:classappend="${#locale.language == 'en'} ? 'active'"
+               th:text="#{language.english}">English</a>
+            <a th:href="@{/news/{id}(id=${news.id},lang='ka')}"
+               th:classappend="${#locale.language == 'ka'} ? 'active'"
+               th:text="#{language.georgian}">Georgian</a>
+        </nav>
+    </header>
+
+    <main class="narrow-layout">
+        <a class="back-link" th:href="@{/}" th:text="#{navigation.back}">Back</a>
+
+        <article class="details-card">
+            <p class="message success-message" th:if="${successMessage}" th:text="${successMessage}"></p>
+            <img class="details-image"
+                 th:if="${news.imagePath != null}"
+                 th:src="@{${news.imagePath}}"
+                 th:alt="#{news.image.alt}">
+            <div class="details-body">
+                <h1 th:text="${news.title}"></h1>
+                <p th:text="${news.content}"></p>
+            </div>
+        </article>
+    </main>
 </div>
-
-<a th:href="@{/}" th:text="#{navigation.back}">Back</a>
 
 </body>
 </html>

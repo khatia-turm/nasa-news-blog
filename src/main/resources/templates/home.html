@@ -2,31 +2,56 @@
 <html xmlns:th="http://www.thymeleaf.org" th:lang="${#locale.language}">
 <head>
     <title th:text="#{home.title}">NASA News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" th:href="@{/style.css}">
 </head>
 <body>
 
-<nav>
-    <a th:href="@{/(lang='en')}" th:text="#{language.english}">English</a>
-    <a th:href="@{/(lang='ka')}" th:text="#{language.georgian}">Georgian</a>
-</nav>
+<div class="page-shell">
+    <header class="site-header">
+        <a class="brand" th:href="@{/}">
+            <img th:src="@{/nasa-badge.svg}" th:alt="#{home.banner.alt}">
+            <span th:text="#{home.heading}">NASA News</span>
+        </a>
 
-<h1 th:text="#{home.heading}">NASA News</h1>
+        <nav class="language-switcher" aria-label="Language">
+            <a th:href="@{/(lang='en')}"
+               th:classappend="${#locale.language == 'en'} ? 'active'"
+               th:text="#{language.english}">English</a>
+            <a th:href="@{/(lang='ka')}"
+               th:classappend="${#locale.language == 'ka'} ? 'active'"
+               th:text="#{language.georgian}">Georgian</a>
+        </nav>
+    </header>
 
-<img th:src="@{/nasa-badge.svg}" th:alt="#{home.banner.alt}" class="hero-image">
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <h1 th:text="#{home.heading}">NASA News</h1>
+                <a th:href="@{/create}" class="btn" th:text="#{home.create}">+ Create News</a>
+            </div>
+            <img th:src="@{/nasa-badge.svg}" th:alt="#{home.banner.alt}" class="hero-image">
+        </section>
 
-<p class="success-message" th:if="${successMessage}" th:text="${successMessage}"></p>
-<p class="error" th:if="${errorMessage}" th:text="${errorMessage}"></p>
+        <p class="message success-message" th:if="${successMessage}" th:text="${successMessage}"></p>
+        <p class="message error" th:if="${errorMessage}" th:text="${errorMessage}"></p>
 
-<a th:href="@{/create}" class="btn" th:text="#{home.create}">+ Create News</a>
-
-<div class="container">
-    <div class="card" th:each="n : ${newsList}">
-        <h2 th:text="${n.title}"></h2>
-        <img th:if="${n.imagePath != null}" th:src="@{${n.imagePath}}" th:alt="#{news.image.alt}">
-        <p th:text="${n.content}"></p>
-        <a th:href="@{/news/{id}(id=${n.id})}" th:text="#{home.openPost}">Open post</a>
-    </div>
+        <section class="card-grid">
+            <article class="card" th:each="n : ${newsList}">
+                <img class="card-image"
+                     th:if="${n.imagePath != null}"
+                     th:src="@{${n.imagePath}}"
+                     th:alt="#{news.image.alt}">
+                <div class="card-body">
+                    <h2 th:text="${n.title}"></h2>
+                    <p th:text="${n.content}"></p>
+                    <a class="card-link"
+                       th:href="@{/news/{id}(id=${n.id})}"
+                       th:text="#{home.openPost}">Open post</a>
+                </div>
+            </article>
+        </section>
+    </main>
 </div>
 
 </body>

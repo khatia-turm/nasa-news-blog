@@ -2,36 +2,58 @@
 <html xmlns:th="http://www.thymeleaf.org" th:lang="${#locale.language}">
 <head>
     <title th:text="#{create.title}">Create News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" th:href="@{/style.css}">
 </head>
 <body>
 
-<nav>
-    <a th:href="@{/create(lang='en')}" th:text="#{language.english}">English</a>
-    <a th:href="@{/create(lang='ka')}" th:text="#{language.georgian}">Georgian</a>
-</nav>
+<div class="page-shell">
+    <header class="site-header">
+        <a class="brand" th:href="@{/}">
+            <img th:src="@{/nasa-badge.svg}" th:alt="#{home.banner.alt}">
+            <span th:text="#{home.heading}">NASA News</span>
+        </a>
 
-<h1 th:text="#{create.heading}">Create NASA News</h1>
+        <nav class="language-switcher" aria-label="Language">
+            <a th:href="@{/create(lang='en')}"
+               th:classappend="${#locale.language == 'en'} ? 'active'"
+               th:text="#{language.english}">English</a>
+            <a th:href="@{/create(lang='ka')}"
+               th:classappend="${#locale.language == 'ka'} ? 'active'"
+               th:text="#{language.georgian}">Georgian</a>
+        </nav>
+    </header>
 
-<form th:action="@{/create}" th:object="${newsForm}" method="post" enctype="multipart/form-data">
+    <main class="narrow-layout">
+        <a class="back-link" th:href="@{/}" th:text="#{navigation.back}">Back</a>
 
-    <label th:text="#{create.label.title}">Title:</label>
-    <input type="text" th:field="*{title}">
-    <p class="error" th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></p>
+        <section class="form-panel">
+            <h1 th:text="#{create.heading}">Create NASA News</h1>
 
-    <label th:text="#{create.label.content}">Content:</label>
-    <textarea th:field="*{content}"></textarea>
-    <p class="error" th:if="${#fields.hasErrors('content')}" th:errors="*{content}"></p>
+            <form th:action="@{/create}" th:object="${newsForm}" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label th:for="title" th:text="#{create.label.title}">Title:</label>
+                    <input type="text" th:field="*{title}">
+                    <p class="field-error" th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></p>
+                </div>
 
-    <label th:text="#{create.label.image}">Image:</label>
-    <input type="file" th:field="*{file}" accept="image/*">
-    <p class="error" th:if="${#fields.hasErrors('file')}" th:errors="*{file}"></p>
+                <div class="form-group">
+                    <label th:for="content" th:text="#{create.label.content}">Content:</label>
+                    <textarea th:field="*{content}"></textarea>
+                    <p class="field-error" th:if="${#fields.hasErrors('content')}" th:errors="*{content}"></p>
+                </div>
 
-    <button type="submit" th:text="#{create.submit}">Post</button>
+                <div class="form-group">
+                    <label th:for="file" th:text="#{create.label.image}">Image:</label>
+                    <input type="file" th:field="*{file}" accept="image/*">
+                    <p class="field-error" th:if="${#fields.hasErrors('file')}" th:errors="*{file}"></p>
+                </div>
 
-</form>
-
-<a th:href="@{/}" th:text="#{navigation.back}">Back</a>
+                <button type="submit" th:text="#{create.submit}">Post</button>
+            </form>
+        </section>
+    </main>
+</div>
 
 </body>
 </html>
