@@ -1390,3 +1390,51 @@ This generated password is for development use only. Your security configuration
 2026-06-14 22:39:05 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
 2026-06-14 22:40:41 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-5 - Shutdown initiated...
 2026-06-14 22:40:41 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-5 - Shutdown completed.
+2026-06-14 19:14:10 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Starting NasaBlogApplication v0.0.1-SNAPSHOT using Java 25.0.3 with PID 1 (/app/app.jar started by root in /app)
+2026-06-14 19:14:10 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-06-14 19:14:13 [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2026-06-14 19:14:13 [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-06-14 19:14:13 [INFO] [org.hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-14 19:14:13 [INFO] [org.hibernate.orm.core] - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-06-14 19:14:15 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2026-06-14 19:14:15 [INFO] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:/app/data/nasa-blog user=SA
+2026-06-14 19:14:15 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2026-06-14 19:14:15 [INFO] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:/app/data/nasa-blog]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: NASA-BLOG/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-14 19:14:16 [INFO] [org.hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-14 19:14:17 [WARN] [o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-14 19:14:19 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Started NasaBlogApplication in 10.424 seconds (process running for 11.473)
+2026-06-14 19:14:19 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - NASA Blog application started
+2026-06-14 19:14:30 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 19:15:22 [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-14 19:19:29 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 19:24:29 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 19:29:29 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 19:34:29 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 19:39:29 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 19:44:29 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 19:49:29 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 19:54:29 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 19:59:29 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 20:04:29 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 20:09:29 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 20:14:29 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 20:19:29 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 20:35:42 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 20:40:42 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 20:45:42 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 20:50:42 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 20:55:42 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 21:00:42 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 21:05:42 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available
+2026-06-14 21:10:42 [INFO] [c.g.k.n.s.NewsStatisticsScheduler] - Scheduled news statistics: 4 posts available

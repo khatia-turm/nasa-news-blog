@@ -1,51 +1,89 @@
-# 🚀 NASA News Blog (Spring Boot Project)
+# NASA Blog
 
-## 📌 Description
+Small Spring Boot project for NASA news posts. You can add posts, upload an image, open post pages, switch language, etc.
 
-This is a simple web application built with Spring Boot for a university project.
-The application allows users to create and view NASA-themed news posts, including image uploads.
+## Demo users
 
-## ⚙️ Features
+admin
+username: admin
+password: admin123
+role: ADMIN
 
-* Create news posts using a form
-* Upload images with posts
-* Form validation with error handling
-* Display all news posts
-* REST API endpoint for retrieving posts
-* Database integration (H2 / JPA)
-* Logging configuration
-* Profile-based configuration (dev/prod)
+user
+username: user
+password: user123
+role: USER
 
-## 🛠️ Technologies Used
+Admin is needed for creating posts and opening `/info`.
 
-* Java
-* Spring Boot
-* Spring MVC
-* Thymeleaf
-* Spring Data JPA
-* H2 Database
-* Maven
+## Endpoints / pages
 
-## 📁 Project Structure
+`/` - home page with all posts, public
 
-* controller – handles web and API requests
-* service – business logic
-* repository – database access
-* model – entity classes
-* templates – Thymeleaf HTML files
-* static – CSS and images
+`/create` - create news post, ADMIN only
 
-## ▶️ How to Run
+`/news/{id}` - open one news post, public
 
-1. Clone the repository
-2. Open the project in IntelliJ IDEA
-3. Run the main application class
-4. Open browser at: http://localhost:8080
+`/health` - actuator health check, public
 
-## 📡 API Endpoint
+`/info` - actuator info, ADMIN only
 
-* GET /api/news → returns all news posts in JSON format
+`/?lang=en` - switch to English
 
-## 👤 Author
+`/?lang=ka` - switch to Georgian
 
-University student project
+## Requirements
+
+Week 7 - Testing: done
+At least 3 unit tests are there. JUnit 5 is used. Mockito is used in `NewsServiceTests` for mocking the repository.
+Files: `NewsServiceTests`, `NewsFormValidationTests`
+
+Week 8 - Security: done
+Spring Security basic auth is added. `/create` and `/info` need ADMIN. Passwords use BCrypt.
+File: `SecurityConfig`
+
+Week 9 - i18n/l10n: done
+English and Georgian are added. Templates use `#{...}`. Language can be changed with `lang=en` or `lang=ka`.
+Files: `messages.properties`, `messages_ka.properties`, `WebConfig`, templates
+
+Week 10 - External API or caching: done
+I used the caching option, not external API. `@Cacheable` and `@CacheEvict` are used.
+Files: `CacheConfig`, `NewsService`
+
+Week 11 - Monitoring: done
+Actuator is added and `/health` is exposed.
+Files: `pom.xml`, `application.properties`
+
+Week 12 - Messaging/Async: done
+I used the scheduled task option. It logs news post count automatically.
+Files: `SchedulingConfig`, `NewsStatisticsScheduler`
+
+Week 14 - Deployment: done
+I used Docker option.
+Files: `Dockerfile`, `docker-compose.yml`
+
+## Run
+
+```bash
+mvnw.cmd spring-boot:run
+```
+
+or with Docker:
+
+```bash
+docker compose up --build
+```
+
+App runs on:
+
+```text
+http://localhost:8080
+```
+
+## Tests
+
+```bash
+mvnw.cmd test
+```
+
+There are service tests with mocked repository and validation tests for the form.
