@@ -1,20 +1,36 @@
 package com.github.khatiaturm.nasa_blog.model;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 public class NewsPost {
 
-    private final long id;
-    private final String title;
-    private final String content;
-    private final String imagePath;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-    public NewsPost(long id, String title, String content, String imagePath) {
-        this.id = id;
+    @Column(nullable = false, length = 120)
+    private String title;
+
+    @Column(nullable = false, length = 5000)
+    private String content;
+
+    private String imagePath;
+
+    protected NewsPost() {
+    }
+
+    public NewsPost(String title, String content, String imagePath) {
         this.title = title;
         this.content = content;
         this.imagePath = imagePath;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 

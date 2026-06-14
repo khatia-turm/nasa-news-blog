@@ -1,30 +1,208 @@
-2026-04-17 14:59:05 [INFO] [c.g.k.n.NasaBlogApplicationTests] - Starting NasaBlogApplicationTests using Java 26 with PID 1628 (started by User in C:\Users\User\Desktop\Spring Boot\nasa_blog)
-2026-04-17 14:59:05 [INFO] [c.g.k.n.NasaBlogApplicationTests] - No active profile set, falling back to 1 default profile: "default"
-2026-04-17 14:59:06 [INFO] [c.g.k.n.NasaBlogApplicationTests] - Started NasaBlogApplicationTests in 2.195 seconds (process running for 5.692)
-2026-04-17 15:14:35 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Starting NasaBlogApplication using Java 26 with PID 25504 (C:\Users\User\Desktop\Spring Boot\nasa_blog\target\classes started by User in C:\Users\User\Desktop\Spring Boot\nasa_blog)
-2026-04-17 15:14:35 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - No active profile set, falling back to 1 default profile: "default"
-2026-04-17 15:14:36 [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
-2026-04-17 15:14:36 [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.20]
-2026-04-17 15:14:36 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Started NasaBlogApplication in 1.631 seconds (process running for 2.378)
-2026-04-17 15:14:36 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - NASA Blog application started
-2026-04-17 15:17:05 [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-04-17 15:19:08 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Starting NasaBlogApplication using Java 26 with PID 18812 (C:\Users\User\Desktop\Spring Boot\nasa_blog\target\classes started by User in C:\Users\User\Desktop\Spring Boot\nasa_blog)
-2026-04-17 15:19:08 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - No active profile set, falling back to 1 default profile: "default"
-2026-04-17 15:19:09 [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
-2026-04-17 15:19:09 [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.20]
-2026-04-17 15:19:09 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Started NasaBlogApplication in 1.647 seconds (process running for 2.458)
-2026-04-17 15:19:09 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - NASA Blog application started
-2026-04-17 17:10:39 [INFO] [c.g.k.n.NasaBlogApplicationTests] - Starting NasaBlogApplicationTests using Java 26 with PID 23504 (started by User in C:\Users\User\Desktop\Spring Boot\nasa_blog)
-2026-04-17 17:10:39 [INFO] [c.g.k.n.NasaBlogApplicationTests] - No active profile set, falling back to 1 default profile: "default"
-2026-04-17 17:10:41 [WARN] [o.s.w.s.r.ResourceHandlerUtils] - Appended trailing slash to static resource location: file:///C:/Users/User/Desktop/Spring%20Boot/nasa_blog/uploads/
-2026-04-17 17:10:41 [INFO] [c.g.k.n.NasaBlogApplicationTests] - Started NasaBlogApplicationTests in 2.766 seconds (process running for 5.123)
-2026-04-17 17:11:28 [INFO] [c.g.k.n.NasaBlogApplicationTests] - Starting NasaBlogApplicationTests using Java 26 with PID 27208 (started by User in C:\Users\User\Desktop\Spring Boot\nasa_blog)
-2026-04-17 17:11:28 [INFO] [c.g.k.n.NasaBlogApplicationTests] - No active profile set, falling back to 1 default profile: "default"
-2026-04-17 17:11:31 [INFO] [c.g.k.n.NasaBlogApplicationTests] - Started NasaBlogApplicationTests in 3.517 seconds (process running for 8.242)
-2026-04-17 17:12:50 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Starting NasaBlogApplication using Java 26 with PID 11280 (C:\Users\User\Desktop\Spring Boot\nasa_blog\target\classes started by User in C:\Users\User\Desktop\Spring Boot\nasa_blog)
-2026-04-17 17:12:50 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - No active profile set, falling back to 1 default profile: "default"
-2026-04-17 17:12:52 [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
-2026-04-17 17:12:52 [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.20]
-2026-04-17 17:12:53 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Started NasaBlogApplication in 3.283 seconds (process running for 4.404)
-2026-04-17 17:12:53 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - NASA Blog application started
-2026-04-17 17:12:57 [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-14 14:01:58 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Starting NasaBlogApplication using Java 26 with PID 28624 (C:\Users\User\Desktop\Spring Boot\nasa_blog\target\classes started by User in C:\Users\User\Desktop\Spring Boot\nasa_blog)
+2026-06-14 14:01:58 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-06-14 14:02:00 [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2026-06-14 14:02:00 [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-06-14 14:02:01 [INFO] [org.hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-14 14:02:01 [INFO] [org.hibernate.orm.core] - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-06-14 14:02:02 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2026-06-14 14:02:02 [INFO] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/nasa-blog user=SA
+2026-06-14 14:02:02 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2026-06-14 14:02:02 [INFO] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/nasa-blog]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: NASA-BLOG/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-14 14:02:03 [INFO] [org.hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-14 14:02:04 [WARN] [o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-14 14:02:05 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Started NasaBlogApplication in 7.234 seconds (process running for 8.319)
+2026-06-14 14:02:05 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - NASA Blog application started
+2026-06-14 14:03:51 [WARN] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s200ms592µs).
+2026-06-14 14:04:37 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2026-06-14 14:04:37 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2026-06-14 14:04:40 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Starting NasaBlogApplication using Java 26 with PID 24896 (C:\Users\User\Desktop\Spring Boot\nasa_blog\target\classes started by User in C:\Users\User\Desktop\Spring Boot\nasa_blog)
+2026-06-14 14:04:40 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-06-14 14:04:42 [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2026-06-14 14:04:42 [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-06-14 14:04:42 [INFO] [org.hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-14 14:04:42 [INFO] [org.hibernate.orm.core] - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-06-14 14:04:43 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2026-06-14 14:04:43 [INFO] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/nasa-blog user=SA
+2026-06-14 14:04:43 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2026-06-14 14:04:43 [INFO] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/nasa-blog]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: NASA-BLOG/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-14 14:04:44 [INFO] [org.hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-14 14:04:45 [WARN] [o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-14 14:04:45 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Started NasaBlogApplication in 5.648 seconds (process running for 6.425)
+2026-06-14 14:04:45 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - NASA Blog application started
+2026-06-14 14:05:06 [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-14 14:47:04 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2026-06-14 14:47:04 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2026-06-14 14:47:04 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Starting NasaBlogApplication using Java 26 with PID 24896 (C:\Users\User\Desktop\Spring Boot\nasa_blog\target\classes started by User in C:\Users\User\Desktop\Spring Boot\nasa_blog)
+2026-06-14 14:47:04 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-06-14 14:47:05 [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2026-06-14 14:47:05 [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-06-14 14:47:05 [INFO] [org.hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-14 14:47:05 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Starting...
+2026-06-14 14:47:05 [INFO] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-2 - Added connection conn20: url=jdbc:h2:file:./data/nasa-blog user=SA
+2026-06-14 14:47:05 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Start completed.
+2026-06-14 14:47:05 [INFO] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/nasa-blog]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: NASA-BLOG/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-14 14:47:05 [INFO] [org.hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-14 14:47:05 [WARN] [o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-14 14:47:05 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Started NasaBlogApplication in 0.984 seconds (process running for 2546.4)
+2026-06-14 14:47:05 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - NASA Blog application started
+2026-06-14 14:47:06 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown initiated...
+2026-06-14 14:47:07 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown completed.
+2026-06-14 14:47:07 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Starting NasaBlogApplication using Java 26 with PID 24896 (C:\Users\User\Desktop\Spring Boot\nasa_blog\target\classes started by User in C:\Users\User\Desktop\Spring Boot\nasa_blog)
+2026-06-14 14:47:07 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-06-14 14:47:07 [WARN] [o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+2026-06-14 14:47:07 [ERROR] [o.s.boot.SpringApplication] - Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60) ~[spring-boot-autoconfigure-4.0.5.jar:4.0.5]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:100) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:196) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:124) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:464) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:316) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:795) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:603) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.0.5.jar:4.0.5]
+	at com.github.khatiaturm.nasa_blog.NasaBlogApplication.main(NasaBlogApplication.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.5.jar:4.0.5]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.github.khatiaturm.nasa_blog.config.SecurityConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@882fb89]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-7.0.6.jar:7.0.6]
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:360) ~[spring-core-7.0.6.jar:7.0.6]
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:417) ~[spring-core-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$0(AbstractAutowireCapableBeanFactory.java:750) ~[spring-beans-7.0.6.jar:7.0.6]
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1735) ~[na:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:749) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:683) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:655) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1699) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:632) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:604) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:589) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanDefinitionsForType(OnBeanCondition.java:334) ~[spring-boot-autoconfigure-4.0.5.jar:4.0.5]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanDefinitionsForType(OnBeanCondition.java:323) ~[spring-boot-autoconfigure-4.0.5.jar:4.0.5]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:221) ~[spring-boot-autoconfigure-4.0.5.jar:4.0.5]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.evaluateConditionalOnMissingBean(OnBeanCondition.java:204) ~[spring-boot-autoconfigure-4.0.5.jar:4.0.5]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:149) ~[spring-boot-autoconfigure-4.0.5.jar:4.0.5]
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47) ~[spring-boot-autoconfigure-4.0.5.jar:4.0.5]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/security/core/userdetails/UserDetailsService
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3011) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2330) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-7.0.6.jar:7.0.6]
+	... 37 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.security.core.userdetails.UserDetailsService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:502) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:560) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:123) ~[spring-boot-devtools-4.0.5.jar:4.0.5]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:502) ~[na:na]
+	... 41 common frames omitted
+2026-06-14 14:53:35 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Starting NasaBlogApplication v0.0.1-SNAPSHOT using Java 26 with PID 16296 (C:\Users\User\Desktop\Spring Boot\nasa_blog\target\nasa_blog-0.0.1-SNAPSHOT.jar started by User in C:\Users\User\Desktop\Spring Boot\nasa_blog)
+2026-06-14 14:53:35 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-06-14 14:53:38 [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2026-06-14 14:53:38 [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-06-14 14:53:38 [INFO] [org.hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-14 14:53:38 [INFO] [org.hibernate.orm.core] - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-06-14 14:53:39 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2026-06-14 14:53:39 [INFO] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:security-check user=SA
+2026-06-14 14:53:39 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2026-06-14 14:53:39 [INFO] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:security-check]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: SECURITY-CHECK/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-14 14:53:41 [INFO] [org.hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-14 14:53:41 [WARN] [o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-14 14:53:42 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Started NasaBlogApplication in 8.092 seconds (process running for 9.092)
+2026-06-14 14:53:42 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - NASA Blog application started
+2026-06-14 14:53:43 [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-14 14:54:19 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - Starting NasaBlogApplication v0.0.1-SNAPSHOT using Java 26 with PID 4404 (C:\Users\User\Desktop\Spring Boot\nasa_blog\target\nasa_blog-0.0.1-SNAPSHOT.jar started by User in C:\Users\User\Desktop\Spring Boot\nasa_blog)
+2026-06-14 14:54:19 [INFO] [c.g.k.nasa_blog.NasaBlogApplication] - No active profile set, falling back to 1 default profile: "default"
+2026-06-14 14:54:22 [INFO] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2026-06-14 14:54:22 [INFO] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-06-14 14:54:22 [INFO] [org.hibernate.orm.jpa] - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-14 14:54:22 [INFO] [org.hibernate.orm.core] - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-06-14 14:54:23 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2026-06-14 14:54:23 [INFO] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:security-check user=SA
+2026-06-14 14:54:23 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2026-06-14 14:54:23 [INFO] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:security-check]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: SECURITY-CHECK/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-14 14:54:25 [INFO] [org.hibernate.orm.core] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-14 14:54:25 [WARN] [o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-14 14:54:27 [WARN] [o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-06-14 14:54:27 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2026-06-14 14:54:27 [INFO] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2026-06-14 14:54:27 [ERROR] [o.s.b.d.LoggingFailureAnalysisReporter] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 18080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 18080 or configure this application to listen on another port.
+
